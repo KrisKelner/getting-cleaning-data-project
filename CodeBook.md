@@ -68,14 +68,14 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 
 #Data transformation steps:
 In this course project data is transformed using following steps:
-1. Downloading data.
-2. Reading 'subject_test.txt', 'y_test.txt' and 'X_test.txt' for test data into separate tables (testSubjects, testLabels and testData respectively).
-3. Merging tables testSubjects, testLabels and testData.
-4. Reading 'subject_train.txt', 'y_train.txt' and 'X_train.txt' for test data into separate tables (trainingSubjects, trainingLabels and trainingData respectively).
-5. Merging tables trainingSubjects, trainingLabels and trainingData.
-6. Merging tables form steps 3 and 5 into a single dataset.
-7. Replacing numeric values of the activities with activity names form 'activity_labels.txt'.
-8. Inserting descriptive names for columns of the dataset produced in step 6: 1st column is 'Subject', 2nd - 'Activity'. Remaining columns are derived from the file 'features.txt'.
-9. Subsetting data so it contains only the mean and standard deviation for  each measurement along with 'Subject' and 'Activity' data.
-10. Counting the average of each variable for each subject and each activity in the dataset from step 9. (With the help of 'ddply' function).
-11. Saving dataset from step 10 with write.table(row.name=FALSE).
+- 1. Downloading data.
+- 2. Reading 'subject_test.txt', 'y_test.txt' and 'X_test.txt' for test data into separate tables (testSubjects, testLabels and testData respectively).
+- 3. Merging tables testSubjects, testLabels and testData.
+- 4. Reading 'subject_train.txt', 'y_train.txt' and 'X_train.txt' for test data into separate tables (trainingSubjects, trainingLabels and trainingData respectively).
+- 5. Merging tables trainingSubjects, trainingLabels and trainingData.
+- 6. Merging tables form steps 3 and 5 into a single dataset.
+- 7. Replacing numeric values of the activities with activity names form 'activity_labels.txt'.
+- 8. Inserting descriptive names for columns of the dataset produced in step 6: 1st column is 'Subject', 2nd - 'Activity'. Remaining columns are derived from the file 'features.txt'.
+- 9. Subsetting data so it contains only the mean and standard deviation for  each measurement along with 'Subject' and 'Activity' data.
+- 10. Counting the average of each variable for each subject and each activity in the dataset from step 9. (With the help of 'ddply' function).
+- 11. Saving dataset from step 10 with write.table(row.name=FALSE).
